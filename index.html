@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Tenses Revision</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Basic styling for active tab */
+        .tab-btn.active-tab {
+            border-bottom-width: 4px;
+            --tw-border-opacity: 1;
+            border-color: rgb(79 70 229 / var(--tw-border-opacity));
+            --tw-text-opacity: 1;
+            color: rgb(79 70 229 / var(--tw-text-opacity));
+        }
+        /* Hide tab content by default */
+        .tab-content {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-3xl md:text-5xl font-bold text-center text-indigo-700 mb-8">Future Tenses Revision</h1>
+
+        <!-- Main Card Container -->
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+            
+            <!-- Tab Navigation -->
+            <nav class="flex border-b border-slate-200">
+                <button class="tab-btn active-tab flex-1 py-4 px-6 font-semibold text-slate-500 hover:bg-slate-50 focus:outline-none" data-tab="continuous">
+                    will be doing
+                </button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-slate-500 hover:bg-slate-50 focus:outline-none" data-tab="perfect">
+                    will have done
+                </button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-slate-500 hover:bg-slate-50 focus:outline-none" data-tab="perfect-continuous">
+                    will have been doing
+                </button>
+            </nav>
+
+            <!-- Content Wrapper -->
+            <div class="p-6 md:p-10">
+
+                <!-- Tab Content: Future Continuous (will be doing) -->
+                <div id="continuous" class="tab-content">
+                    <h2 class="text-3xl font-bold text-indigo-600 mb-4">Future Continuous (will be doing)</h2>
+                    <p class="text-lg text-slate-600 mb-6">
+                        The action is not complete when another action happens in the future. This is similar to past continuous, but it refers to the future.
+                    </p>
+
+                    <!-- Visual Timeline -->
+                    <div class="my-8 p-6 bg-slate-100 rounded-lg">
+                        <h4 class="font-semibold text-lg mb-4 text-center">Visual Timeline</h4>
+                        <div class="relative w-full h-16">
+                            <!-- Time line -->
+                            <div class="absolute top-1/2 left-0 w-full h-1 bg-slate-300"></div>
+                            <!-- Now -->
+                            <div class="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2">
+                                <div class="w-3 h-3 bg-slate-800 rounded-full"></div>
+                                <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-sm font-medium">NOW</span>
+                            </div>
+                            <!-- Future Event -->
+                            <div class="absolute top-1/2 left-3/4 -translate-y-1/2 -translate-x-1/2">
+                                <div class="w-3 h-3 bg-indigo-600 rounded-full"></div>
+                                <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-sm font-medium whitespace-nowrap">Future Time</span>
+                            </div>
+                            <!-- Action in Progress -->
+                            <div class="absolute top-1/2 left-2/3 h-6 -translate-y-1/2 w-1/4 bg-indigo-300 bg-opacity-70 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-medium text-indigo-800">will be doing</span>
+                            </div>
+                            <!-- Interruption -->
+                            <div class="absolute top-1/2 left-[70%] -translate-x-1/2">
+                                <div class="absolute -top-6 text-sm whitespace-nowrap">"when you arrive"</div>
+                                <div class="w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-red-500"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Structure Chart -->
+                    <div class="bg-indigo-50 rounded-lg p-6 my-6">
+                        <h3 class="text-2xl font-bold mb-4">Structure Summary</h3>
+                        <div class="space-y-4">
+                            <!-- Positive -->
+                            <div class="flex items-start">
+                                <span class="text-2xl font-bold text-green-600 mr-3 w-8 text-center">+</span>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">S + will + be + V-ing</p>
+                                    <p class="text-slate-600 italic">Example: I <strong class="text-green-700">will be singing</strong> at the concert tomorrow.</p>
+                                </div>
+                            </div>
+                            <!-- Negative -->
+                            <div class="flex items-start">
+                                <span class="text-2xl font-bold text-red-600 mr-3 w-8 text-center">−</span>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">S + will + not + be + V-ing</p>
+                                    <p class="text-slate-600 italic">Example: I <strong class="text-red-700">will not be singing</strong> at the concert tomorrow.</p>
+                                </div>
+                            </div>
+                            <!-- Question -->
+                            <div class="flex items-start">
+                                <span class="text-2xl font-bold text-blue-600 mr-3 w-8 text-center">?</span>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">Will + S + be + V-ing?</p>
+                                    <p class="text-slate-600 italic">Example: <strong class="text-blue-700">Will</strong> you <strong class="text-blue-700">be singing</strong> at the concert tomorrow?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- How & When to Use -->
+                    <h3 class="text-2xl font-bold mt-10 mb-4">How & When to Use</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Usage 1 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">1. To describe interrupted actions in the future</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"When you come tomorrow, they <strong class="font-medium text-indigo-600">will be playing</strong> tennis."</p>
+                                <p class="italic mt-2">"At 8 PM tonight, they <strong class="font-medium text-indigo-600">will be watching</strong> a movie when the power outage interrupts..."</p>
+                            </div>
+                        </div>
+                        <!-- Usage 2 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">2. To express actions in progress at a specific time in the future</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"At 12 o’clock tomorrow, we <strong class="font-medium text-indigo-600">will be having</strong> lunch at school."</p>
+                                <p class="italic mt-2">"At 9 PM tomorrow, I <strong class="font-medium text-indigo-600">will be studying</strong> for my exam."</p>
+                            </div>
+                        </div>
+                        <!-- Usage 3 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">3. To refer to actions happening now and expected to continue (with "still")</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"Unfortunately, sea levels <strong class="font-medium text-indigo-600">will</strong> still <strong class="font-medium text-indigo-600">be rising</strong> in 20 years."</p>
+                                <p class="italic mt-2">"He <strong class="font-medium text-indigo-600">will be working</strong> on his thesis all night; the deadline is approaching."</p>
+                            </div>
+                        </div>
+                        <!-- Usage 4 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">4. To ask a polite question about the future</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"<strong class="font-medium text-indigo-600">Will</strong> you <strong class="font-medium text-indigo-600">be bringing</strong> your friend to the party tonight?"</p>
+                                <p class="italic mt-2">"<strong class="font-medium text-indigo-600">Will</strong> he <strong class="font-medium text-indigo-600">be joining</strong> us for dinner tonight?"</p>
+                            </div>
+                        </div>
+                        <!-- Usage 5 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">5. To emphasize future plans and intentions</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"He<strong class="font-medium text-indigo-600">'ll be coming</strong> to visit us next week."</p>
+                                <p class="italic mt-2">"Next weekend, they <strong class="font-medium text-indigo-600">will be volunteering</strong> at the local shelter..."</p>
+                            </div>
+                        </div>
+                        <!-- Usage 6 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">6. To describe the atmosphere in the future</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"When I arrive at the party, everybody <strong class="font-medium text-indigo-600">will be celebrating</strong>..."</p>
+                                <p class="italic mt-2">"Tomorrow night, the city <strong class="font-medium text-indigo-600">will be buzzing</strong> with excitement..."</p>
+                            </div>
+                        </div>
+                        <!-- Usage 7 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm md:col-span-2">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">7. To express parallel actions in the future</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"She <strong class="font-medium text-indigo-600">will be watching</strong> TV, and he <strong class="font-medium text-indigo-600">will be cooking</strong> dinner."</p>
+                                <p class="italic mt-2">"Tomorrow morning, while I <strong class="font-medium text-indigo-600">will be working</strong>..., my colleague <strong class="font-medium text-indigo-600">will be preparing</strong>..."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Time Expressions -->
+                    <h3 class="text-2xl font-bold mt-10 mb-4">Time Expressions</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">In the future</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">Next week</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">Next time</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">Next year</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">At this moment, next year</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">At this time tomorrow</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">At 5 p.m tomorrow…</span>
+                    </div>
+
+                    <!-- Adverb Placement -->
+                    <h3 class="text-2xl font-bold mt-10 mb-4">Adverb Placement</h3>
+                    <div class="space-y-4">
+                        <p class="text-slate-600">Adverbs can be placed in various positions to add meaning or emphasis.</p>
+                        <div class="border-l-4 border-indigo-500 pl-4">
+                            <p class="font-semibold">1. Before the auxiliary verb “will”:</p>
+                            <p class="italic">"<strong class="text-indigo-600">Tomorrow</strong>, I will <strong class="text-indigo-600">eagerly</strong> be attending the conference."</p>
+                        </div>
+                        <div class="border-l-4 border-indigo-500 pl-4">
+                            <p class="font-semibold">2. Between “will” and “be”:</p>
+                            <p class="italic">"Sarah will be <strong class="text-indigo-600">diligently</strong> studying for her exams all night." (Note: The user text example was for a different tense, this example is corrected for Future Continuous)</p>
+                        </div>
+                        <div class="border-l-4 border-indigo-500 pl-4">
+                            <p class="font-semibold">3. After the main verb (less common, often for adverbs of place/time):</p>
+                            <p class="italic">"They will be working <strong class="text-indigo-600">tirelessly</strong> on the project." (Note: The user's example "will have been" was Future Perfect Continuous, this is the Future Continuous equivalent)</p>
+                        </div>
+                        <div class="border-l-4 border-indigo-500 pl-4">
+                            <p class="font-semibold">4. At the end of the sentence:</p>
+                            <p class="italic">"In a year’s time, we’ll still be living in this neighborhood <strong class="text-indigo-600">happily</strong>."</p>
+                        </div>
+                         <div class="border-l-4 border-indigo-500 pl-4">
+                            <p class="font-semibold">5. At the beginning of the sentence:</p>
+                            <p class="italic">"<strong class="text-indigo-600">Gradually</strong>, the team will be adapting to the new management style."</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Tab Content: Future Perfect (will have done) -->
+                <div id="perfect" class="tab-content">
+                    <h2 class="text-3xl font-bold text-teal-600 mb-4">Future Perfect (will have done)</h2>
+                    <p class="text-lg text-slate-600 mb-6">
+                        The action will be completed in the future before another action or a specific time. It describes an event expected or planned to happen before a time of reference in the future.
+                    </p>
+
+                    <!-- Visual Timeline -->
+                    <div class="my-8 p-6 bg-slate-100 rounded-lg">
+                        <h4 class="font-semibold text-lg mb-4 text-center">Visual Timeline</h4>
+                        <div class="relative w-full h-16">
+                            <!-- Time line -->
+                            <div class="absolute top-1/2 left-0 w-full h-1 bg-slate-300"></div>
+                            <!-- Now -->
+                            <div class="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2">
+                                <div class="w-3 h-3 bg-slate-800 rounded-full"></div>
+                                <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-sm font-medium">NOW</span>
+                            </div>
+                            <!-- Future Deadline -->
+                            <div class="absolute top-1/2 left-3/4 -translate-y-1/2 -translate-x-1/2">
+                                <div class="w-1 h-6 bg-teal-600"></div>
+                                <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-sm font-medium whitespace-nowrap">By 8 o'clock</span>
+                            </div>
+                            <!-- Completed Action -->
+                            <div class="absolute top-1/2 left-[65%] -translate-y-1/2 -translate-x-1/2">
+                                <span class="text-4xl font-bold text-teal-600">X</span>
+                                <span class="absolute top-0 -bottom-8 left-1/2 -translate-x-1/2 text-sm font-medium whitespace-nowrap">will have finished</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Structure Chart -->
+                    <div class="bg-teal-50 rounded-lg p-6 my-6">
+                        <h3 class="text-2xl font-bold mb-4">Structure Summary</h3>
+                        <div class="space-y-4">
+                            <!-- Positive -->
+                            <div class="flex items-start">
+                                <span class="text-2xl font-bold text-green-600 mr-3 w-8 text-center">+</span>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">S + will + have + past participle</p>
+                                    <p class="text-slate-600 italic">Example: I <strong class="text-green-700">will have finished</strong> my report by the end of this month.</p>
+                                </div>
+                            </div>
+                            <!-- Negative -->
+                            <div class="flex items-start">
+                                <span class="text-2xl font-bold text-red-600 mr-3 w-8 text-center">−</span>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">S + will + not + have + past participle</p>
+                                    <p class="text-slate-600 italic">Example: He <strong class="text-red-700">will not have done</strong> it by this evening.</p>
+                                </div>
+                            </div>
+                            <!-- Question -->
+                            <div class="flex items-start">
+                                <span class="text-2xl font-bold text-blue-600 mr-3 w-8 text-center">?</span>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">Will + S + have + past participle?</p>
+                                    <p class="text-slate-600 italic">Example: <strong class="text-blue-700">Will</strong> you <strong class="text-blue-700">have written</strong> me a letter?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- How & When to Use -->
+                    <h3 class="text-2xl font-bold mt-10 mb-4">How & When to Use</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+                        <!-- Usage 1 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">1. To talk about an action that will finish before a certain time in the future</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"By eight o’clock tomorrow, I<strong class="font-medium text-teal-600">'ll have taken off</strong> for Japan."</p>
+                            </div>
+                        </div>
+                        <!-- Usage 2 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">2. To talk about an action that will be completed before another event takes place</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"She <strong class="font-medium text-teal-600">will have learned</strong> Chinese before she moves to China."</p>
+                            </div>
+                        </div>
+                        <!-- Usage 3 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">3. To express conviction that something happened in the near past</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"The guests <strong class="font-medium text-teal-600">will have arrived</strong> at the hotel by now. (I’m sure they have arrived.)"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Time Expressions -->
+                    <h3 class="text-2xl font-bold mt-10 mb-4">Time Expressions</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full font-medium">By + …</span>
+                        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full font-medium">By the time</span>
+                        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full font-medium">Before</span>
+                        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full font-medium">Until/till</span>
+                        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full font-medium">By then</span>
+                        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full font-medium">By the end of + …</span>
+                        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full font-medium">By tomorrow</span>
+                    </div>
+                </div>
+
+                <!-- Tab Content: Future Perfect Continuous (will have been doing) -->
+                <div id="perfect-continuous" class="tab-content">
+                    <h2 class="text-3xl font-bold text-amber-600 mb-4">Future Perfect Continuous (will have been doing)</h2>
+                    <p class="text-lg text-slate-600 mb-6">
+                        Action will continue in the future when it is interrupted by another action. This tense often includes an indication of how long the action has been happening.
+                    </p>
+
+                    <!-- Visual Timeline -->
+                    <div class="my-8 p-6 bg-slate-100 rounded-lg">
+                        <h4 class="font-semibold text-lg mb-4 text-center">Visual Timeline</h4>
+                        <div class="relative w-full h-16">
+                            <!-- Time line -->
+                            <div class="absolute top-1/2 left-0 w-full h-1 bg-slate-300"></div>
+                            <!-- Now -->
+                            <div class="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2">
+                                <div class="w-3 h-3 bg-slate-800 rounded-full"></div>
+                                <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-sm font-medium">NOW</span>
+                            </div>
+                            <!-- Future Point -->
+                            <div class="absolute top-1/2 left-3/4 -translate-y-1/2 -translate-x-1/2">
+                                <div class="w-1 h-6 bg-amber-600"></div>
+                                <span class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-sm font-medium whitespace-nowrap">By next month</span>
+                            </div>
+                            <!-- Duration -->
+                            <div class="absolute top-1/2 left-[10%] h-6 -translate-y-1/2 w-[65%] bg-amber-300 bg-opacity-70 rounded-full flex items-center justify-center">
+                                <span class="text-sm font-medium text-amber-800">will have been living (for 10 years)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Structure Chart -->
+                    <div class="bg-amber-50 rounded-lg p-6 my-6">
+                        <h3 class="text-2xl font-bold mb-4">Structure Summary</h3>
+                        <div class="space-y-4">
+                            <!-- Positive -->
+                            <div class="flex items-start">
+                                <span class="text-2xl font-bold text-green-600 mr-3 w-8 text-center">+</span>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">S + will + have + been + V-ing</p>
+                                    <p class="text-slate-600 italic">Example: We <strong class="text-green-700">will have been living</strong> in this house for 10 years by next month.</p>
+                                </div>
+                            </div>
+                            <!-- Negative -->
+                            <div class="flex items-start">
+                                <span class="text-2xl font-bold text-red-600 mr-3 w-8 text-center">−</span>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">S + will + not + have + been + V-ing</p>
+                                    <p class="text-slate-600 italic">Example: I <strong class="text-red-700">won’t have been traveling</strong> to New York for 2 years by the end of October.</p>
+                                </div>
+                            </div>
+                            <!-- Question -->
+                            <div class="flex items-start">
+                                <span class="text-2xl font-bold text-blue-600 mr-3 w-8 text-center">?</span>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">Will + S + have + been + V-ing?</p>
+                                    <p class="text-slate-600 italic">Example: <strong class="text-blue-700">Will</strong> you <strong class="text-blue-700">have been eating</strong> vegetables for three months?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- How & When to Use -->
+                    <h3 class="text-2xl font-bold mt-10 mb-4">How & When to Use</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+                        <!-- Usage 1 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">1. To show that something will continue up until a particular event or time in the future</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"James <strong class="font-medium text-amber-600">will have been teaching</strong> at the university for more than a year by the time he leaves for Asia."</p>
+                            </div>
+                        </div>
+                        <!-- Usage 2 -->
+                        <div class="border rounded-lg overflow-hidden shadow-sm">
+                            <div class="bg-slate-100 p-4">
+                                <p class="font-semibold">2. To talk about something that finishes just before another time or action (to emphasize duration)</p>
+                            </div>
+                            <div class="p-4">
+                                <p class="italic">"I will be tired when I get home because I <strong class="font-medium text-amber-600">will have been walking</strong> for over an hour."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Time Expressions -->
+                    <h3 class="text-2xl font-bold mt-10 mb-4">Time Expressions</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-medium">By + this year/month/week</span>
+                        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-medium">Next year/month/week</span>
+                        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-medium">For + an hour, for 5 years</span>
+                        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-medium">By then</span>
+                        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-medium">Since morning, since 1995</span>
+                        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-medium">By tomorrow</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Tabs -->
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        // Set initial state: show the first tab
+        tabContents[0].style.display = 'block';
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Get the target tab from data attribute
+                const targetTab = button.getAttribute('data-tab');
+
+                // Update button active states
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active-tab');
+                });
+                button.classList.add('active-tab');
+
+                // Hide all tab content
+                tabContents.forEach(content => {
+                    content.style.display = 'none';
+                });
+
+                // Show the target tab content
+                document.getElementById(targetTab).style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
